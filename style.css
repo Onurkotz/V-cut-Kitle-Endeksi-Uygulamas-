@@ -65,3 +65,10 @@ body{
     display: none;
    
 }
+
+.list {
+    background-color: rgb(0, 217, 255);
+    border: none;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+}
