@@ -1,29 +1,30 @@
 <!doctype html>
 <html lang="tr">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <title>Vücut Kile Endeksini Öğren!</title>
+    <title>Vücut Kitle İndeksini Öğren!</title>
   </head>
   <body>
 
       <!-----------------------------NAV------------------------------>
       
-      <ul class="nav justify-content-center mt-3" style="background-color: azure;">
+      <ul class="nav justify-content-center mt-3 linebar">
         <li class="nav-item">
-          <a class="nav-link active" href="#" >Anasayfa</a>
+          <a class="nav-link active word" id="home" >Anasayfa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ayrıntılı Oku</a>
+          <a class="nav-link word" href="https://www.istanbulobezitecerrahisi.com/bmi-vucut-kitle-indeksi-hesaplama/">Ayrıntılı Oku</a>
         </li>
         </ul>
 
@@ -32,8 +33,15 @@
            
            
             <div class="col-sm">
-            <div class="row justify-content-md-center"  id="dplay">
-                
+              
+              <div class="row justify-content-md-center">
+                <div class="picture mb-3 ">
+                  <img src="https://www.ebeci.com/wp-content/uploads/2021/10/V%C3%BCcut-Kitle-%C4%B0ndeksi-Nas%C4%B1l-Hesaplan%C4%B1r.png" alt="">
+                </div> <br>
+              </div>
+              
+              <div class="row justify-content-md-center"  id="dplay">
+                    
                     <div class="card text-white bg-primary mb-3 mr-2" style="max-width: 18rem;" id="card1">
                         <div class="card-header">Vücut Kitle İndeksi Nedir?</div>
                         <div class="card-body">
@@ -48,15 +56,12 @@
                           <p class="card-text">Kilogram cinsinden vücut kitlesinin, metre cinsinden vücut uzunluğunun karesine bölünmesiyle hesaplanır.</p>
                         </div>
                       </div>
-
+      
                       
-
-                      
-                      
-            </div>
+               </div>
 
             <div class="row justify-content-md-center">
-                <div class="col-3" style="text-align: center;">
+                <div class="col-3 mb-5" style="text-align: center;">
                     <button id="but">Hemen Hesapla</button>
                 </div>
             </div>
@@ -65,67 +70,29 @@
                   <div class="col-6 offset-3" style="text-align: center;">
                     <div class="mt-3">
                       <form action="" class="form">
-                        <span>Boyunuz: </span><input class="mt-3" type="text" name="heigth" id="he" placeholder="Metre Cinsinden Yazınız!">
+                        <span><i class="fas fa-male mr-1"></i><i class="fas fa-female mr-1"></i>Boyunuz: </span><input class="mt-3" type="text" name="heigth" id="he" placeholder="Metre Cinsinden Yazınız!">
                       </div>
                       <div class="mt-5 mb-3">
-                        <span>Kilonuz: </span><input class="mt-3 mb-3" type="text" name="weight" id="we" placeholder="Kilogram Cinsinden Yazınız!">
+                        <span><i class="fas fa-weight mr-1"></i>Kilonuz: </span><input class="mt-3 mb-3" type="text" name="weight" id="we" placeholder="Kilogram Cinsinden Yazınız!">
                       </div>
-                      <button id="button" type="submit">Hesapla</button>
+                      <button class="mb-2 mr-1" id="button" type="submit">Hesapla </button><button class="mb-2" id="button" type="reset">Sıfırla</button>
                     </form>
                     <ul class="list-group" id="show">
 
                     </ul>
                   </div>
             </div>
-
-            
-
-                
+  
            </div>
-            
-            
-        
+
         </div>
         
-        
-        
-        
-          
-      
-      
-      
-      
-      
+
     
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    -->
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <script src="/ani.js"></script>
     <script src="/app.js"></script>
   </body>

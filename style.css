@@ -2,6 +2,14 @@ body{
     background-color: rgb(0, 217, 255);;
 }
 
+.linebar {
+   background-color: rgb(255, 87, 81);
+  
+}
+
+.word {
+    color: wheat;
+}
 
 #card1 {
     -webkit-animation: fadein 2s;
@@ -15,7 +23,7 @@ body{
 
 #card2 {
     -webkit-animation: fadein 2s;
-    animation: fadein 4s;
+    animation: fadein 7s;
 }
 
 @keyframes fadein {
@@ -30,7 +38,7 @@ body{
     border-radius: 5%;
     width: 100%;
     -webkit-animation: fadein 2s;
-    animation: fadein 4sn;
+    animation: fadein 9sn;
 
 }
 
@@ -58,12 +66,17 @@ body{
     background-color: rgb(0, 228, 140);
     border: 1px solid black;
     border-radius: 5%;
-    width: 100%;
+    width: 40%;
 }
 
 #display {
     display: none;
-   
+    -webkit-animation: fadein 2s;
+    animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity : 1;}
 }
 
 .list {
@@ -71,4 +84,17 @@ body{
     border: none;
     border-top: 2px solid yellow;
     border-bottom: 2px solid yellow;
+}
+
+
+.picture {
+    border: 6px solid black;
+    border-radius: 5%;
+    -webkit-animation: fadein 2s;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to { opacity : 1;}
 }

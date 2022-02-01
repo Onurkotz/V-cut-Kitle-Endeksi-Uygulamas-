@@ -6,3 +6,9 @@ $(function(){
         $("#display").show();
     });
 });
+
+$(function() {
+    $("#home").click(function(){
+        location.reload();
+    });
+});
